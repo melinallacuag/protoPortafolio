@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    * {
+        margin: 0;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container_portafolio {
+        background-color: blueviolet;
+        padding: 0 3rem;
+    }
+
+    .section_portafolio {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 300px repeat(1, 1fr);
+        gap: 1rem;
+        font-weight: 400;
+        align-items: center;
+    }
+
+    .card_imagenes {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        border-radius: 0.8rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .card_datos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        position: relative;
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    .card_profesion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 180px;
+        background-color: #1D1D1D;
+        border-radius: 0.5rem;
+    }
+
+    .text_name {
+        font-size: 1.25rem;
+        color: #fff;
+    }
+
+    .text_profesion {
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+    .card_redsociales {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .card_icono {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1D1D1D;
+        width: 40px;
+        height: 40px;
+        border-radius: 0.25rem;
+
+    }
+    .card_iconos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #111111;
+        width: 40px;
+        height: 40px;
+        border-radius: 0.25rem;
+    }
+
+    .card_informacion {
+        display: flex;
+        align-items: center;
+        padding: 1.25rem;
+        flex-direction: column;
+        background-color: #1D1D1D;
+        width: 205px;
+        border-radius: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .card_componentes {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .text_titluiInfo {
+        font-size: 0.65rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .text_datiInfo {
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: left;
+    }
+
+    .separador_hr {
+        width: 200px;
+        background-color: #B8B0B0;
+
+    }
+
+    .card_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 40px;
+        border-radius: 1rem;
+        background-color: #8021CB;
+    }
+
+    .card_contdatos {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        padding-top: 80px;
+        padding-bottom: 15px;
+        margin-bottom: -50px;
+        background-color: #111111;
+        border-radius: 1rem;
+        gap: 0.75rem;
+        
+    }
+</style>
+
+<body>
+
+    <div class="container_portafolio">
+        <section class="section_portafolio">
+            <div class="card_datos">
+                <img class="card_imagenes"
+                    src="https://bostami-nextjs.netlify.app/_next/image?url=%2Fimages%2Fabout%2Favatar.jpg&w=256&q=75"
+                    alt="">
+                <div class="card_contdatos">
+                    <h1 class="text_name">Gino Galarza Cañari</h1>
+                    <div class="card_profesion">
+                        <p class="text_profesion">Programador Backend</p>
+                    </div>
+                    <div class="card_redsociales">
+
+                        <div class="card_icono">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_icono">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_icono">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_icono">
+                            <img src="" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="card_informacion">
+                        <div class="card_componentes">
+                            <div class="card_iconos">
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <p class="text_titluiInfo">
+                                    Numero
+                                </p>
+                                <p class="text_datiInfo">
+                                    925 625 467
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador_hr">
+                        <div class="card_componentes">
+                            <div class="card_iconos">
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <p class="text_titluiInfo">
+                                    Numero
+                                </p>
+                                <p class="text_datiInfo">
+                                    925 625 467
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador_hr">
+                        <div class="card_componentes">
+                            <div class="card_iconos">
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <p class="text_titluiInfo">
+                                    Numero
+                                </p>
+                                <p class="text_datiInfo">
+                                    925 625 467
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="separador_hr">
+                        <div class="card_componentes">
+                            <div class="card_iconos">
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <p class="text_titluiInfo">
+                                    Numero
+                                </p>
+                                <p class="text_datiInfo">
+                                    925 625 467
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="card_btn">
+                        <img src="" alt="">
+                        <p>Descargar CV</p>
+                    </button>
+                </div>
+
+            </div>
+            <div>
+                <div>dffdfd
+                    df
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+
+</html>
