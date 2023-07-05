@@ -322,6 +322,7 @@
 
     .distribucion_hr {
         width: 150px;
+        background: linear-gradient(#c932ef, #8021CB);
         border: 1px solid #8021CB;
         border-radius: 0.5rem;
 
@@ -369,6 +370,19 @@
     .card_vonvot{
         display: flex;
         gap: 0.5rem;
+    }
+
+    @media (max-width: 480px) {
+        .card_capacidades{
+            flex-direction: column;
+        }
+
+        .card_habilidades{
+            width: 100%;
+        }
+        .card_conocimiento{
+            width: 100%;
+        }
     }
 </style>
 
@@ -476,7 +490,7 @@
                     </div>
                     <div class="card_menu">
                         <img width="20" height="20" src="img/icon_resumen.png" alt="resumen">
-                        <p class="text_menu"> Resumen</p>
+                        <p class="text_menu" ><a href="resumen.html">Resumen</a> </p>
                     </div>
                     <div class="card_menu">
                         <img width="20" height="20" src="img/icon_repositorio.png" alt="repositorio">
