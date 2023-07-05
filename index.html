@@ -9,11 +9,11 @@
     * {
         margin: 0;
         color: #fff;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Inter', sans-serif;
     }
 
     .container_portafolio {
-        background-color: blueviolet;
+        background-color: #611857;
         padding: 0 3rem;
     }
 
@@ -21,17 +21,18 @@
         display: grid;
         width: 100%;
         height: 100vh;
-        grid-template-columns: 300px repeat(1, 1fr);
+        grid-template-columns: 300px repeat(auto-fit, minmax(300px, 1fr));
+        /*   grid-template-columns: 300px repeat(1, 1fr);*/
         gap: 1rem;
         font-weight: 400;
         align-items: center;
     }
 
     .card_imagenes {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         position: absolute;
-        top: 5%;
+        top: 8%;
         left: 50%;
         border-radius: 0.8rem;
         transform: translate(-50%, -50%);
@@ -45,26 +46,27 @@
         position: relative;
         border-radius: 1rem;
         text-align: center;
+        height: 90vh;
     }
 
     .card_profesion {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 35px;
-        width: 180px;
+        height: 30px;
+        width: 160px;
         background-color: #1D1D1D;
         border-radius: 0.5rem;
     }
 
     .text_name {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         color: #fff;
     }
 
     .text_profesion {
-        color: #fff;
-        font-size: 0.8rem;
+        color: #B8B0B0;
+        font-size: 0.75rem;
     }
 
     .card_redsociales {
@@ -82,11 +84,12 @@
         border-radius: 0.25rem;
 
     }
-    .card_iconos{
+
+    .card_iconos {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #111111;
+        background-color: #090808;
         width: 40px;
         height: 40px;
         border-radius: 0.25rem;
@@ -94,61 +97,278 @@
 
     .card_informacion {
         display: flex;
-        align-items: center;
-        padding: 1.25rem;
+        align-items: flex-start;
+        padding: 1rem;
         flex-direction: column;
         background-color: #1D1D1D;
-        width: 205px;
+        width: 210px;
         border-radius: 0.5rem;
         gap: 0.5rem;
     }
 
     .card_componentes {
         display: flex;
+        align-items: center;
         gap: 1rem;
     }
 
     .text_titluiInfo {
-        font-size: 0.65rem;
+        color: #B8B0B0;
+        font-size: 0.6rem;
         font-weight: 500;
         text-align: left;
     }
 
     .text_datiInfo {
-        font-size: 1rem;
-        font-weight: 900;
+        font-size: 0.75rem;
+        font-weight: 700;
         text-align: left;
     }
 
     .separador_hr {
         width: 200px;
-        background-color: #B8B0B0;
+        border: 0.5px solid #b8b0b00f;
 
+    }
+
+    .card_contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 90vh;
     }
 
     .card_btn {
         display: flex;
         align-items: center;
-        justify-content: center;
-        width: 200px;
-        height: 40px;
-        border-radius: 1rem;
+        gap: 1rem;
         background-color: #8021CB;
+        color: #fff;
+    }
+    .card_btn:hover{
+        background-color: #aa39de;
     }
 
-    .card_contdatos {   
+
+    .card_contdatos {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 300px;
-        padding-top: 80px;
+        width: 280px;
+        padding-top: 100px;
         padding-bottom: 15px;
-        margin-bottom: -50px;
         background-color: #111111;
         border-radius: 1rem;
         gap: 0.75rem;
-        
+        height: 100%;
+    }
+
+    .card_menus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #111111;
+        height: 12vh;
+        gap: 1rem;
+        border-radius: 0.8rem;
+
+    }
+
+    .card_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1D1D1D;
+        padding: 0.5rem;
+        border-radius: 0.8rem;
+        height: 4vh;
+        width: 100px;
+        gap: 0.5rem;
+        transition: 1s all;
+    }
+
+    .card_menu:hover,
+    .active {
+        background: linear-gradient(#c932ef, #8021CB);
+      
+       /* background-color: #8021CB;*/
+    }
+
+    .card_menu:hover {
+        background-color: #8021CB;
+        transition: 1s all;
+    }
+
+    .text_menu {
+        font-size: 0.75rem;
+    }
+
+    .container_inicio {
+        display: flex;
+        flex-direction: column;
+        background-color: #111111;
+        border-radius: 0.5rem;
+        height: 100%;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .card_sobremi {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .text_sobremi {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .text_sobremi_desc {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+
+    .card_capacidades {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .card_habilidades {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 50%;
+    }
+
+    .text_habilidades {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .card_conocimiento {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 50%;
+    }
+
+    .text_conocimiento {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .icons8 {
+        color: #fff;
+    }
+
+    .btn {
+        font-weight: 500;
+        border-radius: 0.65rem;
+        border: transparent;
+        color: #fff;
+        padding: 0.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        text-decoration: none;
+        box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.24);
+        transition: 1s all;
+    }
+
+    .text_descarga {
+        font-size: 0.8rem;
+    }
+
+    .card_datainfo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .card_nombres {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .card_contnombres {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        height: 25px;
+        background-color: #1D1D1D;
+    }
+
+    .text_conNombre {
+        font-size: 0.75rem;
+        color: #B8B0B0;
+    }
+
+    .card_contsobremi {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .distribucion_hr {
+        width: 150px;
+        border: 1px solid #8021CB;
+        border-radius: 0.5rem;
+
+    }
+
+    .card_porcentaje {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .card_infporcentaje {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card_progreso {
+        width: 100%;
+        animation: prog 2s linear;
+    }
+
+    @keyframes prog {
+        0% {
+            width: 0%;
+            background-color: #f1f1f1;
+        }
+
+        100% {
+            width: 100%;
+            color: #000;
+        }
+    }
+
+    .text_porcentaje {
+        color: #B8B0B0;
+        font-size: 0.75rem;
+    }
+
+    .card_datosprogreso {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .card_vonvot{
+        display: flex;
+        gap: 0.5rem;
     }
 </style>
 
@@ -168,16 +388,16 @@
                     <div class="card_redsociales">
 
                         <div class="card_icono">
-                            <img src="" alt="">
+                            <img width="25" height="25" src="img/icon_facebook.png" alt="">
                         </div>
                         <div class="card_icono">
-                            <img src="" alt="">
+                            <img width="25" height="25" src="img/icon_github.png" alt="">
                         </div>
                         <div class="card_icono">
-                            <img src="" alt="">
+                            <img width="25" height="25" src="img/icon_youtube.png" alt="">
                         </div>
                         <div class="card_icono">
-                            <img src="" alt="">
+                            <img width="25" height="25" src="img/icons_linkedin.png" alt="linkedin">
                         </div>
 
                     </div>
@@ -185,11 +405,11 @@
                     <div class="card_informacion">
                         <div class="card_componentes">
                             <div class="card_iconos">
-                                <img src="" alt="">
+                                <img width="20" height="20" src="img/icon_telefono.png" alt="telefono">
                             </div>
-                            <div>
+                            <div class="card_datainfo">
                                 <p class="text_titluiInfo">
-                                    Numero
+                                    Teléfono
                                 </p>
                                 <p class="text_datiInfo">
                                     925 625 467
@@ -199,59 +419,165 @@
                         <hr class="separador_hr">
                         <div class="card_componentes">
                             <div class="card_iconos">
-                                <img src="" alt="">
+                                <img width="20" height="20" src="img/icon_ubicacion.png" alt="ubicacion">
                             </div>
-                            <div>
+                            <div class="card_datainfo">
                                 <p class="text_titluiInfo">
-                                    Numero
+                                    Ubicación
                                 </p>
                                 <p class="text_datiInfo">
-                                    925 625 467
+                                    Perú
                                 </p>
                             </div>
                         </div>
                         <hr class="separador_hr">
                         <div class="card_componentes">
                             <div class="card_iconos">
-                                <img src="" alt="">
+                                <img width="20" height="20" src="img/icon_correo.png" alt="correo">
                             </div>
-                            <div>
+                            <div class="card_datainfo">
                                 <p class="text_titluiInfo">
-                                    Numero
+                                    Correo Electrónico
                                 </p>
                                 <p class="text_datiInfo">
-                                    925 625 467
+                                    Krity.rocking@gmail.com
                                 </p>
                             </div>
                         </div>
                         <hr class="separador_hr">
                         <div class="card_componentes">
                             <div class="card_iconos">
-                                <img src="" alt="">
+                                <img width="20" height="20" src="img/icon_calendario.png" alt="calendario">
                             </div>
-                            <div>
+                            <div class="card_datainfo">
                                 <p class="text_titluiInfo">
-                                    Numero
+                                    Fecha de Nacimiento
                                 </p>
                                 <p class="text_datiInfo">
-                                    925 625 467
+                                    04 de Octubre del 2023
                                 </p>
                             </div>
                         </div>
 
                     </div>
 
-                    <button class="card_btn">
-                        <img src="" alt="">
-                        <p>Descargar CV</p>
+                    <button class="btn card_btn">
+                        <img width="20" height="20" src="img/icon_descarga.png" alt="descarga">
+                        <p class="text_descarga">Descargar CV</p>
                     </button>
                 </div>
 
             </div>
-            <div>
-                <div>Contenedor
-                </div>
-                <div>
+            <div class="card_contenido">
+                <nav class="card_menus">
+                    <div class="card_menu active">
+                        <img width="20" height="20" src="img/icon_home.png" alt="home" />
+                        <p class="text_menu">Inicio</p>
+                    </div>
+                    <div class="card_menu">
+                        <img width="20" height="20" src="img/icon_resumen.png" alt="resumen">
+                        <p class="text_menu"> Resumen</p>
+                    </div>
+                    <div class="card_menu">
+                        <img width="20" height="20" src="img/icon_repositorio.png" alt="repositorio">
+                        <p class="text_menu">Repositorios</p>
+                    </div>
+                    <div class="card_menu">
+                        <img width="20" height="20" src="img/icon_contacto.png" alt="contacto">
+                        <p class="text_menu">Contactame</p>
+                    </div>
+                </nav>
+                <div class="container_inicio">
+                    <div class="card_sobremi">
+                        <div class="card_contsobremi">
+                            <h2 class="text_sobremi">
+                                Sobre Mí
+                            </h2>
+                            <hr class="distribucion_hr">
+                        </div>
+
+                        <p class="text_sobremi_desc">
+                            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development
+                            and print media. I enjoy turning complex problems into simple, beautiful and intuitive
+                            designs.
+                            My aim is to bring across your message and identity in the most creative way. I created web
+                            design for many famous brand companies. </p>
+
+                    </div>
+
+                    <div class="card_capacidades">
+                        <div class="card_habilidades">
+                            <h3 class="text_habilidades">
+                                Habilidades de Trabajo
+                            </h3>
+                            <div class="card_porcentaje">
+                                <div class="card_datosprogreso">
+                                    <div class="card_infporcentaje">
+                                        <div class="text_porcentajeNombre">Web Desing</div>
+                                        <p class="text_porcentaje">80%</p>
+                                    </div>
+                                    <progress class="card_progreso" max="100" value="80"></progress>
+
+                                    <div class="card_infporcentaje">
+                                        <div class="text_porcentajeNombre">Web Desing</div>
+                                        <p class="text_porcentaje">40%</p>
+                                    </div>
+                                    <progress class="card_progreso" max="100" value="40"></progress>
+
+                                    <div class="card_infporcentaje">
+                                        <div class="text_porcentajeNombre">Web Desing</div>
+                                        <p class="text_porcentaje">75%</p>
+                                    </div>
+                                    <progress class="card_progreso" max="100" value="75"></progress>
+
+                                    <div class="card_infporcentaje">
+                                        <div class="text_porcentajeNombre">Web Desing</div>
+                                        <p class="text_porcentaje">60%</p>
+                                    </div>
+                                    <progress class="card_progreso" max="100" value="60"></progress>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="card_conocimiento">
+                            <h3 class="text_conocimiento">
+                                Conocimientos
+                            </h3>
+                            <div class="card_nombres">
+                                <div class="card_vonvot">
+                                    <div class="card_contnombres" style="width: 25%;">
+                                        <p class="text_conNombre">Maketing</p>
+                                    </div>
+                                    <div class="card_contnombres" style="width: 80%;">
+                                        <p class="text_conNombre">Digital Desing</p>
+                                    </div>
+                                </div>
+                                <div class="card_vonvot">
+                                    <div class="card_contnombres" style="width: 50%;">
+                                        <p class="text_conNombre">Social Media</p>
+                                    </div>
+                                    <div class="card_contnombres" style="width: 50%;">
+                                        <p class="text_conNombre">Flexibility</p>
+                                    </div>
+                                </div>
+                                <div class="card_vonvot">
+                                    <div class="card_contnombres" style="width: 65%;">
+                                        <p class="text_conNombre">Maketing</p>
+                                    </div>
+                                    <div class="card_contnombres" style="width: 35%;">
+                                        <p class="text_conNombre">Print</p>
+                                    </div>
+                                </div>
+                                <div class="card_vonvot">
+                                    <div class="card_contnombres" style="width: 100%;">
+                                        <p class="text_conNombre">Time Management</p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
